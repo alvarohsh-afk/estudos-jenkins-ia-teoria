@@ -1,25 +1,19 @@
-# Estudos: Jenkins & Infraestrutura como Código (IaC)
+# Jenkins & Inteligência Artificial: Fundamentos Teóricos
 
-Este repositório contém a síntese teórica dos meus estudos sobre automação de infraestrutura e esteiras de implantação (CI/CD). 
+Este repositório documenta meus estudos sobre a automação do ciclo de vida de modelos de IA, integrando o poder do Jenkins com processos de Inteligência Artificial.
 
-## 🚀 Conceitos Fundamentais
+## 🤖 O Papel do Jenkins na IA
+Na inteligência artificial, o Jenkins atua na orquestração de **MLOps** (Machine Learning Operations). A teoria foca em:
 
-### 1. Jenkins e a Esteira CI/CD
-O Jenkins atua como o "maestro" da automação. Os principais conceitos teóricos abordados foram:
-- **Continuous Integration (CI):** Prática de integrar o código em um repositório compartilhado várias vezes ao dia.
-- **Continuous Delivery (CD):** Garantia de que o código esteja sempre pronto para ser implantado.
-- **Pipeline:** O fluxo de etapas (Build, Test, Deploy) que o software percorre.
+- **Automação de Pipelines de Dados:** Como o Jenkins pode disparar scripts de limpeza e tratamento de dados automaticamente.
+- **Continuous Training (CT):** A teoria de que um modelo de IA precisa ser retreinado sempre que novos dados chegam, garantindo que a inteligência não fique "defasada".
+- **Monitoramento de Drift:** Conceito teórico sobre como identificar quando o modelo de IA começa a perder precisão e precisa de intervenção.
 
-### 2. Infraestrutura como Código (IaC)
-A teoria de IaC foca em gerenciar e provisionar infraestrutura através de arquivos de configuração, em vez de processos manuais.
-- **Idempotência:** A capacidade de rodar o mesmo script várias vezes e obter sempre o mesmo resultado.
-- **Vantagens:** Velocidade, redução de erro humano e facilidade de recuperação em caso de falhas.
-
-## ⚙️ Fluxo de Trabalho (Workflow)
-Abaixo, um diagrama do processo teórico de integração:
+## 🧠 Fluxo Teórico: IA + Jenkins
 ```mermaid
-graph LR
-    A[Desenvolvedor] -->|Push Código| B(GitHub)
-    B -->|Trigger| C(Jenkins)
-    C -->|Executa| D{Scripts IaC}
-    D -->|Provisiona| E[Servidor/Nuvem]
+graph TD
+    A[Novos Dados de BI] --> B(Jenkins)
+    B --> C{Treinamento de IA}
+    C --> D[Avaliação de Acurácia]
+    D -->|Aprovado| E[Implantação do Modelo]
+    D -->|Reprovado| F[Ajuste de Hiperparâmetros]
